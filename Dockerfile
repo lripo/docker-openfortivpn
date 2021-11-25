@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y wget && \
    cp ${GLIDER_BASENAME}"/glider" /usr/bin
 
 
-FROM ubuntu:20.04
+FROM ${BASE_IMAGE}
 
 RUN apt-get update && \
   apt-get install -y openfortivpn && \
