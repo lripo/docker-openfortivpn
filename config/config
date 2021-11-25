@@ -1,0 +1,13 @@
+# Openfortivpn config file.
+# Use CONFIG_FILE env var if it's not located in /etc/openfortivpn/config
+
+host = < vpn server host to connect >
+port = < vpn server port number >
+username = < user >
+password = < pass >
+set-routes = 1
+set-dns = 1
+pppd-use-peerdns = 1
+user-cert = < if used, set to mapped dir, usually /etc/openfortivpn/user-cert.pem >
+user-key =  < same for key >
+trusted-cert = < sha256 server cert fingerprint if ca is not recognized >
